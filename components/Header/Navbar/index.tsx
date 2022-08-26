@@ -5,7 +5,7 @@ const NavBar = () => {
     <>
       <div className="navbar bg-primary">
         <div className="flex-1">
-          <a className="btn text-primary-black btn-ghost hover:bg-primary-black hover:text-primary normal-case text-xl">
+          <a href="#" className=" text-primary-black uppercase text-xl">
             VK
           </a>
         </div>

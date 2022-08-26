@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'Josefin Sans',
+      },
       colors: {
         primary: '#E7E7E5',
         'primary-black': '#2A2A2A',
