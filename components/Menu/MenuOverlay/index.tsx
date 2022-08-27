@@ -10,7 +10,7 @@ const MenuOverLay = ({ menuOpen }: IPropsType) => {
       className={
         menuOpen
           ? 'fixed top-0 left-0 w-full h-full z-10 backdrop-blur-3xl text-white ease-in-out duration-300'
-          : 'fixed top-[-100%]'
+          : 'fixed left-[-100%]'
       }
     >
       <ul className="relative top-20 flex flex-col text-8xl font-bold">
