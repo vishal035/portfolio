@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
 import MainBackGround from '../../components/Background/MainBackground';
+import BlogCategories from '../../components/Blogs/BlogCategories';
+import BlogLists from '../../components/Blogs/BlogLists';
 import NavBar from '../../components/Header/Navbar';
 
 const Blogs = () => {
@@ -20,6 +22,8 @@ const Blogs = () => {
               Currently On Progress
             </h1>
           </div>
+          <BlogCategories />
+          <BlogLists />
         </section>
       </main>
     </>

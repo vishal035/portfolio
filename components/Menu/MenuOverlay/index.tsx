@@ -25,7 +25,7 @@ const MenuOverLay = ({ menuOpen }: IPropsType) => {
           <Link href="/projects">Projects</Link>
         </li>
         <li className="py-4 px-2 tracking-widest hover:underline transition-all ease-in-out hover:text-primary-green">
-          <Link href="/blogs">Blog</Link>
+          <Link href="/blog">Blog</Link>
         </li>
         <li className="py-4 px-2 tracking-widest hover:underline transition-all ease-in-out hover:text-primary-green">
           <Link href="/contact">Contact</Link>
