@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MenuOverLay from '../../Menu/MenuOverlay';
 
 const NavBar = () => {
+  const [menuOpen, SetMenuOpen] = useState(false);
+  const menuOnClickHandler = () => {
+    SetMenuOpen(!menuOpen);
+  };
   return (
     <>
-      <div className="min-h-4 flex items-center p-4">
-        <div className="flex-1">
+      <div className="min-h-4 flex items-center p-4 transition-all ease-in-out">
+        <div className="flex-1 z-20">
           <a href="#" className=" p-2 text-primary uppercase text-xl font-bold">
             VK
           </a>
         </div>
-        <div className="flex-none">
-          <button className="px-4 py-2  text-white">
+        <div className="flex-none z-20">
+          <button
+            className="px-4 py-2  text-white"
+            onClick={menuOnClickHandler}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -26,6 +34,7 @@ const NavBar = () => {
             </svg>
           </button>
         </div>
+        <MenuOverLay menuOpen={menuOpen} />
       </div>
     </>
   );
