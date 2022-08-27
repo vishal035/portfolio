@@ -13,7 +13,7 @@ const MenuOverLay = ({ menuOpen }: IPropsType) => {
           : 'fixed left-[-100%]'
       }
     >
-      <ul className="relative top-20 flex flex-col text-8xl font-bold">
+      <ul className="relative top-20 flex flex-col md:items-center text-8xl font-bold">
         <li className="py-4 px-2 tracking-widest hover:underline transition-all ease-in-out hover:text-primary-green">
           <a href="#">Home</a>
         </li>
@@ -22,6 +22,9 @@ const MenuOverLay = ({ menuOpen }: IPropsType) => {
         </li>
         <li className="py-4 px-2 tracking-widest hover:underline transition-all ease-in-out hover:text-primary-green">
           <a href="#">Projects</a>
+        </li>
+        <li className="py-4 px-2 tracking-widest hover:underline transition-all ease-in-out hover:text-primary-green">
+          <a href="#">Blog</a>
         </li>
         <li className="py-4 px-2 tracking-widest hover:underline transition-all ease-in-out hover:text-primary-green">
           <a href="#">Contact</a>
