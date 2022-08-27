@@ -3,14 +3,14 @@ import React from 'react';
 const NavBar = () => {
   return (
     <>
-      <div className="navbar bg-primary">
+      <div className="navbar bg-primary-black">
         <div className="flex-1">
-          <a href="#" className=" text-primary-black uppercase text-xl">
+          <a href="#" className=" text-primary uppercase text-xl">
             VK
           </a>
         </div>
         <div className="flex-none">
-          <button className="btn btn-square btn-ghost text-primary-black hover:bg-primary-black hover:text-primary">
+          <button className="btn btn-square btn-ghost bg-primary-black text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
