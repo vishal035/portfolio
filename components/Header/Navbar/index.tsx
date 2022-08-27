@@ -10,7 +10,7 @@ const NavBar = () => {
           </a>
         </div>
         <div className="flex-none">
-          <button className="px-4 py-2 bg-primary-black text-primary">
+          <button className="px-4 py-2  text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

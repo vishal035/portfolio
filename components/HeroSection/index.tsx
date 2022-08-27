@@ -3,8 +3,8 @@ import Button from '../Buttons/Default';
 
 const HeroSection = () => {
   return (
-    <main className="relative mt-8 w-full h-full flex flex-col items-center mix-blend-difference">
-      <section className="ralative h-2/4 w-full flex flex-col items-center text-primary ">
+    <main className="z-10 mt-8 w-full h-full flex flex-col items-center">
+      <section className="ralative h-2/4 w-full flex flex-col items-center text-white ">
         <h1 className="relative top-4 font-black text-6xl tracking-wider">
           Hi
         </h1>
