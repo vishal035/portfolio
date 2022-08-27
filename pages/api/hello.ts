@@ -13,13 +13,6 @@ export default async function handler(
   res.status(200).send({ status: '🚀 All API Routes are UP and Running ⚡⚡' });
 }
 
-// const api = axios.create({
-//   baseURL: process.env.API_BASE_URL,
-//   headers: {
-//     Authorization: `Bearer ${process.env.API_AUTH_KEY}`,
-//   },
-// });
-
 // // Categories Fetch
 // export const fetchCategories = async () => api.get('/api/categories');
 
