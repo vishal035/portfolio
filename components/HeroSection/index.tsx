@@ -4,7 +4,7 @@ import Button from '../Buttons/Default';
 const HeroSection = () => {
   return (
     <main className="z-10 mt-8 w-full h-full flex flex-col items-center">
-      <section className="ralative h-2/4 w-full flex flex-col items-center text-white ">
+      <section className="ralative h-2/4 w-full flex flex-col items-center text-white mix-blend-difference">
         <h1 className="relative top-4 font-black text-6xl tracking-wider md:text-8xl md:tracking-widest">
           Hi
         </h1>
