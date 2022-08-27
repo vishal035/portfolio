@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import MainBackGround from '../components/Background/MainBackground';
 import NavBar from '../components/Header/Navbar';
 import HeroSection from '../components/HeroSection';
 
@@ -12,8 +13,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="absolute top-0 left-0 w-screen h-screen bg-primary-black overflow-hidden">
-        <NavBar />
-        <HeroSection />
+        <MainBackGround />
+        {/* <NavBar /> */}
+        {/* <HeroSection /> */}
       </main>
     </>
   );
