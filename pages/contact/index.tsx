@@ -1,14 +1,13 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
-import MainBackGround from '../components/Background/MainBackground';
-import NavBar from '../components/Header/Navbar';
-import HeroSection from '../components/HeroSection';
+import React from 'react';
+import MainBackGround from '../../components/Background/MainBackground';
+import NavBar from '../../components/Header/Navbar';
 
-const Home: NextPage = () => {
+const Contact = () => {
   return (
     <>
       <Head>
-        <title>Home - VK</title>
+        <title>Contact Me - VK</title>
         <meta name="description" content="On the way to learnin" />
         <link rel="icon" href="/Logo.svg" />
       </Head>
@@ -16,11 +15,15 @@ const Home: NextPage = () => {
         <MainBackGround />
         <section className="absolute top-0 left-0 w-screen h-screen">
           <NavBar />
-          <HeroSection />
+          <div className="flex items-center justify-center">
+            <h1 className="text-3xl text-primary-green mix-blend-difference">
+              Currently On Progress
+            </h1>
+          </div>
         </section>
       </main>
     </>
   );
 };
 
-export default Home;
+export default Contact;
