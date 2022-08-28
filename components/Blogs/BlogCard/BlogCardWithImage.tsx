@@ -11,7 +11,7 @@ interface IPropsTypes {
 const BlogCardWithImage = ({ article }: IPropsTypes) => {
   // console.log(article.attributes.Featured_Image.data[0].attributes.url);
   return (
-    <div className="relative mx-auto my-8 py-6 pl-4 pr-12 bg-conic from-primary-green-light to-primary-green-1 rounded-md items-center flex h-fit w-11/12">
+    <div className="relative mx-auto my-2 py-6 pl-4 pr-12 bg-primary-black backdrop-blur-md rounded-md items-center flex h-fit w-11/12">
       <div className="relative w-64 h-36">
         <Image
           className="rounded-md"

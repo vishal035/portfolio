@@ -40,7 +40,7 @@ const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropsTypes) => {
     <div className="flex justify-center mt-16 ">
       <button
         onClick={() => handlePaginate(-1)}
-        className={`${'bg-primary-green-1 py-2 px-4 text-primary-black w-24 rounded-full hover:scale-110 transition-all ease-in-out mr-6'} ${
+        className={`${'bg-primary-black py-2 px-4 text-primary-green w-24 rounded-full hover:scale-110 transition-all ease-in-out mr-6'} ${
           isPrevDisabled() ? ' disabled' : ' '
         }`}
       >
@@ -48,7 +48,7 @@ const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropsTypes) => {
       </button>
       <button
         onClick={() => handlePaginate(1)}
-        className={`${'bg-primary-green-1 py-2 px-4 text-primary-black w-24 rounded-full hover:scale-110 transition-all ease-in-out mr-6'} ${
+        className={`${'bg-primary-black py-2 px-4 text-primary-green w-24 rounded-full hover:scale-110 transition-all ease-in-out mr-6'} ${
           isNextDisabled() ? ' disabled' : ' '
         }`}
       >

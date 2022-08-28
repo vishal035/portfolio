@@ -13,7 +13,7 @@ interface IPropsTypes {
 
 const BlogSection = ({ categories, articles }: IPropsTypes) => {
   return (
-    <div>
+    <div className="relative top-6">
       {/* <Tab categories={categories.items} /> */}
       {/* Articles */}
       <ArticleList articles={articles.items} />

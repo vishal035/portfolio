@@ -12,7 +12,7 @@ const ArticleList = ({ articles }: IPropsTypes) => {
   // console.log(articles);
   return (
     <>
-      <div className="flex flex-col mt-2">
+      <div className="flex flex-col">
         <ErrorBoundary>
           {articles.length > 0 ? (
             articles.map((article) => (
