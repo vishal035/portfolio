@@ -9,7 +9,7 @@ interface IPropsTypes {
 
 const AuthorCard = ({ article }: IPropsTypes) => {
   return (
-    <div className="hidden md:flex items-center my-4">
+    <div className="flex items-center my-4 w-full">
       <div className="rounded-full overflow-hidden flex items-center justify-center mr-4">
         <Image
           src={
@@ -25,7 +25,7 @@ const AuthorCard = ({ article }: IPropsTypes) => {
           }
         />
       </div>
-      <span className="flex flex-row items-center text-sm font-medium text-white">
+      <span className=" w-full flex flex-row items-center justify-center text-[7px] md:text-sm font-light text-white">
         {article.attributes.author.data.attributes.firstname +
           ' ' +
           article.attributes.author.data.attributes.lastname}

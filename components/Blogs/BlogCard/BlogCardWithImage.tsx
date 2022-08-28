@@ -11,8 +11,8 @@ interface IPropsTypes {
 const BlogCardWithImage = ({ article }: IPropsTypes) => {
   // console.log(article.attributes.Featured_Image.data[0].attributes.url);
   return (
-    <div className="relative mx-auto my-2 py-6 pl-4 pr-12 bg-primary-black backdrop-blur-md rounded-md items-center flex h-fit w-11/12">
-      <div className="relative w-64 h-36">
+    <div className="relative w-11/12 mx-auto my-2 py-6 pl-4 pr-12 bg-primary-black backdrop-blur-md rounded-md items-center flex h-fit ">
+      <div className="relative w-64 h-32">
         <Image
           className="rounded-md"
           src={article.attributes.Featured_Image.data[0].attributes.url}
@@ -32,7 +32,7 @@ const BlogCardWithImage = ({ article }: IPropsTypes) => {
               : article.attributes.description}
           </div>
           <AuthorCard article={article} />
-          <span className="font-bold hidden md:block text-base text-primary-green-1 after:content-['→'] after:ml-3.5 after:font-bold after:text-lg hover:after:ml-5 after:text-primary-green-1">
+          <span className="inline-block font-bold md:block text-base text-primary-green hover:after:content-['→'] after:ml-1 after:font-bold after:text-lg hover:after:ml-1 after:text-primary-green">
             Read more
           </span>
         </span>
