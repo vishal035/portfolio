@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 import MenuOverLay from '../../Menu/MenuOverlay';
 
@@ -9,14 +10,14 @@ const NavBar = () => {
   return (
     <>
       <div className="min-h-4 flex items-center p-4 transition-all ease-in-out">
-        <div className="flex-1 z-20">
-          <a href="#" className=" p-2 text-primary uppercase text-xl font-bold">
+        <div className="flex-1 z-20 text-white">
+          <Link href="/" className=" p-2 uppercase text-xl font-bold">
             VK
-          </a>
+          </Link>
         </div>
         <div className="flex-none z-20">
           <button
-            className="px-4 py-2  text-white"
+            className={`px-4 py-2  text-white`}
             onClick={menuOnClickHandler}
           >
             <svg
@@ -24,6 +25,8 @@ const NavBar = () => {
               fill="none"
               viewBox="0 0 24 24"
               className="inline-block w-5 h-5 stroke-current"
+              // style={{ rotate: `${menuOpen ? '90deg' : '0deg'}` }}
+              // transform={`${menuOpen ? 'rotate(90deg)' : "rotate('0deg')"}`}
             >
               <path
                 strokeLinecap="round"
