@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { IArticle } from '../../types';
-import { FormatDate } from '../../utils';
-import AuthorCard from '../Author/AuthorCard';
+import { IArticle } from '../../../types';
+import { FormatDate } from '../../../utils';
+import AuthorCard from '../../Author/AuthorCard';
 
 interface IPropsTypes {
   article: IArticle;
