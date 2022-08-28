@@ -38,13 +38,13 @@ const Blogs: NextPage<IPropsTypes> = ({ categories, articles }) => {
         <MainBackGround />
         <section className="absolute top-0 left-0 w-screen h-screen">
           <NavBar />
-          <div className="flex items-center justify-center">
+          <div>
             <Tab categories={categories.items} />
+            {/* <BlogCategories /> */}
             <BlogSection articles={articles} categories={categories} />
             <Pagination page={page} pageCount={pageCount} />
           </div>
-          <BlogCategories />
-          <BlogLists />
+          {/* <BlogLists /> */}
         </section>
       </main>
     </>
