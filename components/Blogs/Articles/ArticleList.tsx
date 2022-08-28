@@ -13,15 +13,11 @@ const ArticleList = ({ articles }: IPropsTypes) => {
   return (
     <>
       <div className="flex flex-col">
-        <ErrorBoundary>
-          {articles.length > 0 ? (
-            articles.map((article) => (
-              <BlogCardWithImage key={article.id} article={article} />
-            ))
-          ) : (
-            <BlogCardBase />
-          )}
-        </ErrorBoundary>
+        {/* <ErrorBoundary> */}
+        {articles.map((article) => (
+          <BlogCardWithImage key={article.id} article={article} />
+        ))}
+        {/* </ErrorBoundary> */}
       </div>
     </>
   );

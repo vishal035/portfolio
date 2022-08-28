@@ -34,9 +34,9 @@ const Blogs: NextPage<IPropsTypes> = ({ categories, articles }) => {
         <meta name="description" content="On the way to learnin" />
         <link rel="icon" href="/Logo.svg" />
       </Head>
-      <main className="absolute z-0 top-0 left-0 w-screen h-screen bg-primary-black overflow-hidden">
+      <main className="absolute z-0 top-0 left-0 w-screen h-full bg-primary-black overflow-x-hidden">
         <MainBackGround />
-        <section className="absolute top-0 left-0 w-screen h-screen">
+        <section className="absolute top-0 left-0 w-screen h-full">
           <NavBar />
           <div>
             <Tab categories={categories.items} />
