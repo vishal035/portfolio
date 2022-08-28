@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { ICategory } from '../../../types';
+import Link from 'next/link';
 
 interface IPropsTypes {
   categories: ICategory[];
@@ -21,7 +22,7 @@ const BlogCategories = ({ categories }: IPropsTypes) => {
               !router.query.category ? 'border-2 border-primary-green' : ''
             }`}
           >
-            All
+            <Link href="/blog">All</Link>
           </li>
           {categories.map((category) => {
             return (
@@ -31,7 +32,7 @@ const BlogCategories = ({ categories }: IPropsTypes) => {
                   isActiveLink(category) ? 'border-2 border-primary-green' : ''
                 }`}
               >
-                <a href={category.attributes.Title_URL}>
+                <a href={`/blog/${category.attributes.Title_URL}`}>
                   {category.attributes.Title}
                 </a>
               </li>
