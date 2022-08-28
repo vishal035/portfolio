@@ -14,7 +14,7 @@ const HeroSection = () => {
         <h3 className="relative top-10 text-4xl md:text-6xl font-bold tracking-widest md:tracking-[10px]">
           A Self Taught
         </h3>
-        <h4 className="relative top-16 text-4xl md:text-6xl font-semibold tracking-normal md:tracking-wider">
+        <h4 className="relative top-16 text-3xl md:text-6xl font-semibold tracking-normal md:tracking-wider">
           FullStack Developer
         </h4>
         <p className="relative top-16 tracking-normal md:tracking-[7px]">

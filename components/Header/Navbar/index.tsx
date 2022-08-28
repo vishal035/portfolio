@@ -10,8 +10,8 @@ const NavBar = () => {
   return (
     <>
       <div className="min-h-4 flex items-center p-4 transition-all ease-in-out">
-        <div className="flex-1 z-20 text-white">
-          <Link href="/" className=" p-2 uppercase text-xl font-bold">
+        <div className="flex-1 z-20 text-white p-2 uppercase text-xl font-bold ">
+          <Link href="/" className="">
             VK
           </Link>
         </div>
